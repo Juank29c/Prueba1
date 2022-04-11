@@ -1,0 +1,42 @@
+:root{
+    --fuenteparrafos: 'Open Sans', sans-serif;
+}
+
+html{
+    box-sizing: border-box; /*para que cualquier valor de ancho y alto de las cajas, incluyan el borde y se ajuste*/
+    font-size: 62.5%; /* 1rem= 10px, es el ajuste para esta medida*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit; /*hereda del elemento padre*/
+}
+
+body{
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto; /*centrar el contenido horizontalmente*/
+}
+
+#title {
+    text-align: center;
+}
+.contenedor__imagen{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-div {
+    align-self: center;
+    width: 60%;
+    height: 40rem;
+    background-image: url(/img/Borloug.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
